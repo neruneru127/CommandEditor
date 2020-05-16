@@ -1,0 +1,10 @@
+C:\VS\CommandEditor\CommandEditor\CommandEditor\bin\Debug\CommandEditor.exe.config
+C:\VS\CommandEditor\CommandEditor\CommandEditor\bin\Debug\CommandEditor.exe
+C:\VS\CommandEditor\CommandEditor\CommandEditor\bin\Debug\CommandEditor.pdb
+C:\VS\CommandEditor\CommandEditor\CommandEditor\obj\Debug\CommandEditor.csprojAssemblyReference.cache
+C:\VS\CommandEditor\CommandEditor\CommandEditor\obj\Debug\CommandEditor.Form1.resources
+C:\VS\CommandEditor\CommandEditor\CommandEditor\obj\Debug\CommandEditor.Properties.Resources.resources
+C:\VS\CommandEditor\CommandEditor\CommandEditor\obj\Debug\CommandEditor.csproj.GenerateResource.cache
+C:\VS\CommandEditor\CommandEditor\CommandEditor\obj\Debug\CommandEditor.csproj.CoreCompileInputs.cache
+C:\VS\CommandEditor\CommandEditor\CommandEditor\obj\Debug\CommandEditor.exe
+C:\VS\CommandEditor\CommandEditor\CommandEditor\obj\Debug\CommandEditor.pdb
