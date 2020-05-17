@@ -11,4 +11,5 @@ C:\VS\CommandEditor\CommandEditor\CommandEditor\obj\Debug\CommandEditor.TargetSe
 C:\VS\CommandEditor\CommandEditor\CommandEditor\obj\Debug\CommandEditor.AddAbilityForm.resources
 C:\VS\CommandEditor\CommandEditor\CommandEditor\obj\Debug\CommandEditor.AddAbility.AbilitySettingForm.resources
 C:\VS\CommandEditor\CommandEditor\CommandEditor\obj\Debug\CommandEditor.MainWindow.resources
-C:\VS\CommandEditor\CommandEditor\CommandEditor\obj\Debug\CommandEditor.csprojAssemblyReference.cache
+C:\VS\CommandEditor\CommandEditor\CommandEditor\obj\Debug\CommandEditor.Enchant.EnchantForm.resources
+C:\VS\CommandEditor\CommandEditor\CommandEditor\obj\Debug\CommandEditor.Enchant.EnchantSettingForm.resources

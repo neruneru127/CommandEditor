@@ -54,9 +54,11 @@ namespace CommandEditor
         private void DataChange()
         {
             var selectedItem = (AbilityData)AddAbilityListBox.SelectedItem;
+            int selectIndex = AddAbilityListBox.SelectedIndex;
             AbilitySettingForm settingForm = new AbilitySettingForm(selectedItem);
             if (settingForm.ShowDialog(this) == DialogResult.OK)
             {
+                AddAbilityListBox.Items.RemoveAt(selectIndex);
                 AddAbilityListBox.Items.Add(selectedItem);
             }
         }

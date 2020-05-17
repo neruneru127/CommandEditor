@@ -32,7 +32,7 @@ namespace CommandEditor.AddAbility
             // 計算方法を設定
             foreach(var item in AbilityData.operationList)
             {
-                OperationComboBox.Items.Add(item.name);
+                OperationComboBox.Items.Add(item.description);
             }
             // 装備箇所を設定
             foreach(var item in Enum.GetValues(typeof(AbilityData.Slot)))

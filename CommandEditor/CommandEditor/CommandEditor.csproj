@@ -64,6 +64,19 @@
     </Compile>
     <Compile Include="Common.cs" />
     <Compile Include="Define.cs" />
+    <Compile Include="Enchant\EnchantData.cs" />
+    <Compile Include="Enchant\EnchantForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Enchant\EnchantForm.Designer.cs">
+      <DependentUpon>EnchantForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enchant\EnchantSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enchant\EnchantSettingForm.Designer.cs">
+      <DependentUpon>EnchantSettingForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +102,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddAbility\AddAbilityForm.resx">
       <DependentUpon>AddAbilityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enchant\EnchantForm.resx">
+      <DependentUpon>EnchantForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enchant\EnchantSettingForm.resx">
+      <DependentUpon>EnchantSettingForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
