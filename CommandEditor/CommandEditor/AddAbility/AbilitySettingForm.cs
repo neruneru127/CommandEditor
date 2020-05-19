@@ -30,28 +30,23 @@ namespace CommandEditor.AddAbility
                 AbilityTypeComboBox.Items.Add(item.name);
             }
             // 計算方法を設定
-            foreach(var item in AbilityData.operationList)
+            foreach(var item in AbilityData.OperationList)
             {
                 OperationComboBox.Items.Add(item.description);
             }
             // 装備箇所を設定
-            foreach(var item in Enum.GetValues(typeof(AbilityData.Slot)))
+            foreach(var item in AbilityData.SlotList)
             {
-                SlotCheckList.Items.Add(item);
+                SlotCombBox.Items.Add(item.name);
             }
 
             AbilityNameTextBox.Text = abilityData.GetAbilityName();
             AbilityTypeComboBox.SelectedIndex = abilityData.GetAbilityTypeIndex();
             ValueNumeric.Value = new decimal(abilityData.GetValue());
             OperationComboBox.SelectedIndex = abilityData.GetOperationIndex();
-
-            foreach(var item in abilityData.GetSlot())
-            {
-                SlotCheckList.SetItemCheckState((int)item, CheckState.Checked);
-            }
-            
-            UUIDMostTextBox.Text = abilityData.GetUUIDMost();
-            UUIDLeastTextBox.Text = abilityData.GetUUIDLeast();
+            SlotCombBox.SelectedIndex = abilityData.GetSlotIndex();
+            UUIDMostNumeric.Value = int.Parse(abilityData.GetUUIDMost());   
+            UUIDLeastNumeric.Value = int.Parse(abilityData.GetUUIDLeast());
 
         }
 
@@ -63,12 +58,9 @@ namespace CommandEditor.AddAbility
             abilityData.SetAbilityTypeIndex(AbilityTypeComboBox.SelectedIndex);
             abilityData.SetValue((float)ValueNumeric.Value);
             abilityData.SetOperationIndex(OperationComboBox.SelectedIndex);
-            foreach(var item in SlotCheckList.CheckedItems)
-            {
-                abilityData.AddSlotList(item.ToString());
-            }           
-            abilityData.SetUUIDMost(UUIDMostTextBox.Text);
-            abilityData.SetUUIDLeast(UUIDLeastTextBox.Text);
+            abilityData.SetSlotIndex(SlotCombBox.SelectedIndex);
+            abilityData.SetUUIDMost(UUIDMostNumeric.Value.ToString());
+            abilityData.SetUUIDLeast(UUIDLeastNumeric.Value.ToString());
         }
     }
 }

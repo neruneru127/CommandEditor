@@ -62,5 +62,16 @@ namespace CommandEditor.Enchant
             var selectedItem = EnchantListBox.SelectedItem;
             EnchantListBox.Items.Remove(selectedItem);
         }
+
+        public List<EnchantData> GetEnchantDataList()
+        {
+            List<EnchantData> enchantDataList = new List<EnchantData>();
+            foreach(var item in EnchantListBox.Items)
+            {
+                enchantDataList.Add((EnchantData)item);
+            }
+
+            return enchantDataList;
+        }
     }
 }

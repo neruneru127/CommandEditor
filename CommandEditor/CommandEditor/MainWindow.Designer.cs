@@ -38,11 +38,13 @@
             this.データパック出力ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainCommand = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.GenerateTextBox = new System.Windows.Forms.TextBox();
+            this.CommandPanel = new System.Windows.Forms.Panel();
             this.giveForm1 = new CommandEditor.GiveForm();
+            this.GenerateTextBox = new System.Windows.Forms.TextBox();
+            this.GenerateButton = new System.Windows.Forms.Button();
+            this.ClearButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.CommandPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -52,7 +54,7 @@
             this.ファイルFToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(760, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -122,14 +124,21 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "コマンドの種類";
             // 
-            // panel1
+            // CommandPanel
             // 
-            this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.giveForm1);
-            this.panel1.Location = new System.Drawing.Point(1, 55);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 340);
-            this.panel1.TabIndex = 3;
+            this.CommandPanel.AutoScroll = true;
+            this.CommandPanel.Controls.Add(this.giveForm1);
+            this.CommandPanel.Location = new System.Drawing.Point(1, 55);
+            this.CommandPanel.Name = "CommandPanel";
+            this.CommandPanel.Size = new System.Drawing.Size(759, 340);
+            this.CommandPanel.TabIndex = 3;
+            // 
+            // giveForm1
+            // 
+            this.giveForm1.Location = new System.Drawing.Point(-1, 0);
+            this.giveForm1.Name = "giveForm1";
+            this.giveForm1.Size = new System.Drawing.Size(760, 340);
+            this.giveForm1.TabIndex = 0;
             // 
             // GenerateTextBox
             // 
@@ -137,22 +146,36 @@
             this.GenerateTextBox.Multiline = true;
             this.GenerateTextBox.Name = "GenerateTextBox";
             this.GenerateTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.GenerateTextBox.Size = new System.Drawing.Size(801, 44);
+            this.GenerateTextBox.Size = new System.Drawing.Size(586, 44);
             this.GenerateTextBox.TabIndex = 4;
             // 
-            // giveForm1
+            // GenerateButton
             // 
-            this.giveForm1.Location = new System.Drawing.Point(0, 0);
-            this.giveForm1.Name = "giveForm1";
-            this.giveForm1.Size = new System.Drawing.Size(778, 339);
-            this.giveForm1.TabIndex = 0;
+            this.GenerateButton.Location = new System.Drawing.Point(592, 415);
+            this.GenerateButton.Name = "GenerateButton";
+            this.GenerateButton.Size = new System.Drawing.Size(75, 23);
+            this.GenerateButton.TabIndex = 5;
+            this.GenerateButton.Text = "Generate";
+            this.GenerateButton.UseVisualStyleBackColor = true;
+            this.GenerateButton.Click += new System.EventHandler(this.GenerateButton_Click);
+            // 
+            // ClearButton
+            // 
+            this.ClearButton.Location = new System.Drawing.Point(673, 415);
+            this.ClearButton.Name = "ClearButton";
+            this.ClearButton.Size = new System.Drawing.Size(75, 23);
+            this.ClearButton.TabIndex = 6;
+            this.ClearButton.Text = "Clear";
+            this.ClearButton.UseVisualStyleBackColor = true;
             // 
             // MainWindow
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(760, 450);
+            this.Controls.Add(this.ClearButton);
+            this.Controls.Add(this.GenerateButton);
             this.Controls.Add(this.GenerateTextBox);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.CommandPanel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.mainCommand);
             this.Controls.Add(this.menuStrip1);
@@ -161,7 +184,7 @@
             this.Text = "NelCommandEditor";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.panel1.ResumeLayout(false);
+            this.CommandPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,9 +202,11 @@
         private System.Windows.Forms.ToolStripMenuItem データパック出力ToolStripMenuItem;
         private System.Windows.Forms.ComboBox mainCommand;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel CommandPanel;
         private GiveForm giveForm1;
         private System.Windows.Forms.TextBox GenerateTextBox;
+        private System.Windows.Forms.Button GenerateButton;
+        private System.Windows.Forms.Button ClearButton;
     }
 }
 

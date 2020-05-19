@@ -45,7 +45,14 @@ namespace CommandEditor.Enchant
             new EnchantType{name = "luck_of_the_sea",       description = "宝釣り"},
             new EnchantType{name = "lure",                  description = "入れ食い"},
             new EnchantType{name = "mending",               description = "修繕"},
-            new EnchantType{name = "vanishing_curse",       description = "消滅の呪い"}
+            new EnchantType{name = "vanishing_curse",       description = "消滅の呪い"},
+            new EnchantType{name = "impaling",              description = "水生特効"},
+            new EnchantType{name = "riptide",               description = "激流"},
+            new EnchantType{name = "loyalty",               description = "忠誠"},
+            new EnchantType{name = "channeling",            description = "召雷"},
+            new EnchantType{name = "multishot",             description = "拡散"},
+            new EnchantType{name = "piercing",              description = "貫通"},
+            new EnchantType{name = "quick_charge",          description = "高速装填"},
         };
 
         private int enchantTypeIndex = 0;

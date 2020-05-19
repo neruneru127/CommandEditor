@@ -78,6 +78,40 @@ namespace CommandEditor
 
             return fileName;
         }
-       
+
+        public void ChangeCommandWindow(string commandStr)
+        {
+            GenerateTextBox.Text = commandStr;
+        }
+
+        private void GenerateButton_Click(object sender, EventArgs e)
+        {
+            string generetedCommand = CommandGenerate();
+            ChangeCommandWindow(generetedCommand);
+        }
+
+        /// <summary>
+        /// コマンド生成
+        /// </summary>
+        /// <returns>生成されたコマンド文字列</returns>
+        private string CommandGenerate()
+        {
+            // 0でいいのか？要確認
+            var commandControl = CommandPanel.Controls[0];
+            string generetedCommand = "";
+
+            switch (commandControl.GetType().ToString())
+            {
+                case "CommandEditor.GiveForm":
+                    GiveForm giveForm = (GiveForm)commandControl;
+                    generetedCommand = giveForm.GenerateCommand();
+                    break;
+
+                default:
+                    break;
+            }
+
+            return generetedCommand;
+        }
     }
 }

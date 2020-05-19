@@ -44,11 +44,21 @@ namespace CommandEditor
             {
                 TargetSelectCombBox.Items.Add(item.name);
             }
+            TargetSelectCombBox.SelectedIndex = 0;
         }
 
         private void NBTSettingButton_Click(object sender, EventArgs e)
         {
             
+        }
+
+        /// <summary>
+        /// 現在設定されているセレクタを取得
+        /// </summary>
+        /// <returns>ターゲットセレクタの文字列</returns>
+        public string GetSelecter()
+        {
+            return TargetSelectList[TargetSelectCombBox.SelectedIndex].name;
         }
     }
 }

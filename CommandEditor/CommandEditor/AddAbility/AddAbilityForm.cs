@@ -62,5 +62,16 @@ namespace CommandEditor
                 AddAbilityListBox.Items.Add(selectedItem);
             }
         }
+
+        public List<AbilityData> GetAbilityDataList()
+        {
+            List<AbilityData> abilityDataList = new List<AbilityData>();
+            foreach(var item in AddAbilityListBox.Items)
+            {
+                abilityDataList.Add((AbilityData)item);
+            }
+
+            return abilityDataList;
+        }
     }
 }

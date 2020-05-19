@@ -13,3 +13,4 @@ C:\VS\CommandEditor\CommandEditor\CommandEditor\obj\Debug\CommandEditor.AddAbili
 C:\VS\CommandEditor\CommandEditor\CommandEditor\obj\Debug\CommandEditor.MainWindow.resources
 C:\VS\CommandEditor\CommandEditor\CommandEditor\obj\Debug\CommandEditor.Enchant.EnchantForm.resources
 C:\VS\CommandEditor\CommandEditor\CommandEditor\obj\Debug\CommandEditor.Enchant.EnchantSettingForm.resources
+C:\VS\CommandEditor\CommandEditor\CommandEditor\obj\Debug\CommandEditor.csprojAssemblyReference.cache

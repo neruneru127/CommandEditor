@@ -25,36 +25,43 @@ namespace CommandEditor.AddAbility
             public string description;
         }
 
-        public enum Slot
+        public struct Slot
         {
-            mainhand,
-            offhand,
-            feet,
-            legs,
-            chest,
-            head
+            public string name;
+            public string description;
         }
 
         public static readonly AbilityType[] AbilityTypeList =
         {
-            new AbilityType {name = "maxHealth",            parentStr = "generic.", description = "最大体力(2で割った数がハートの数)\r\nデフォルト:20.0 最小値:0.0 最大値:1.7*10^308"},
-            new AbilityType {name = "followRange",          parentStr = "generic.", description = "索敵範囲の広さ(1ブロック単位、※Mobによって違い有り)\r\nデフォルト:※32.0 最小値:0.0 最大値:2048.0"},
-            new AbilityType {name = "knockbackResistance",  parentStr = "generic.", description = "ノックバック耐性(1.0 = 100%)\r\nデフォルト:0.0 最小値:0.0 最大値:1.0"},
-            new AbilityType {name = "movementSpeed",        parentStr = "generic.", description = "移動速度(ブロック/秒)\r\nデフォルト:0.7 最小値:0.0 最大値:1.7*10^308"},
-            new AbilityType {name = "attackDamage",         parentStr = "generic.", description = "攻撃力(2で割った数がハートの数)\r\nデフォルト:1.0 最小値:0.0 最大値:1.7*10^308"},
-            new AbilityType {name = "armor",                parentStr = "generic.", description = "防具の防御力\r\nデフォルト:0.0 最小値:0.0 最大値:30.0"},
-            new AbilityType {name = "armorToughness",       parentStr = "generic.", description = "防具の耐久値\r\nデフォルト:0.0 最小値:0.0 最大値:20.0"},
-            new AbilityType {name = "attackSpeed",          parentStr = "generic.", description = "攻撃速度(4.0の場合、フルチャージは0.25秒)\r\nデフォルト:4.0 最小値:0.0 最大値:1024.0"},
-            new AbilityType {name = "luck",                 parentStr = "generic.", description = "幸運の値\r\nデフォルト:0.0 最小値:-1024.0 最大値:1024.0"},
-            new AbilityType {name = "jumpStrength",         parentStr = "horse.",   description = "馬のジャンプ力\r\nデフォルト:0.7 最小値:0.0 最大値:2.0"},
-            new AbilityType {name = "spawnReinforcements",  parentStr = "zombie.",  description = "ゾンビが攻撃されたとき、ほかのゾンビを召喚する確率\r\nデフォルト:0.0 最小値:0.0 最大値:1.0"}
+            new AbilityType {name = "maxHealth",            parentStr = "generic", description = "最大体力(2で割った数がハートの数)\r\nデフォルト:20.0 最小値:0.0 最大値:1.7*10^308"},
+            new AbilityType {name = "followRange",          parentStr = "generic", description = "索敵範囲の広さ(1ブロック単位、※Mobによって違い有り)\r\nデフォルト:※32.0 最小値:0.0 最大値:2048.0"},
+            new AbilityType {name = "knockbackResistance",  parentStr = "generic", description = "ノックバック耐性(1.0 = 100%)\r\nデフォルト:0.0 最小値:0.0 最大値:1.0"},
+            new AbilityType {name = "movementSpeed",        parentStr = "generic", description = "移動速度(ブロック/秒)\r\nデフォルト:0.7 最小値:0.0 最大値:1.7*10^308"},
+            new AbilityType {name = "attackDamage",         parentStr = "generic", description = "攻撃力(2で割った数がハートの数)\r\nデフォルト:1.0 最小値:0.0 最大値:1.7*10^308"},
+            new AbilityType {name = "armor",                parentStr = "generic", description = "防具の防御力\r\nデフォルト:0.0 最小値:0.0 最大値:30.0"},
+            new AbilityType {name = "armorToughness",       parentStr = "generic", description = "防具の耐久値\r\nデフォルト:0.0 最小値:0.0 最大値:20.0"},
+            new AbilityType {name = "attackSpeed",          parentStr = "generic", description = "攻撃速度(4.0の場合、フルチャージは0.25秒)\r\nデフォルト:4.0 最小値:0.0 最大値:1024.0"},
+            new AbilityType {name = "luck",                 parentStr = "generic", description = "幸運の値\r\nデフォルト:0.0 最小値:-1024.0 最大値:1024.0"},
+            new AbilityType {name = "jumpStrength",         parentStr = "horse",   description = "馬のジャンプ力\r\nデフォルト:0.7 最小値:0.0 最大値:2.0"},
+            new AbilityType {name = "spawnReinforcements",  parentStr = "zombie",  description = "ゾンビが攻撃されたとき、ほかのゾンビを召喚する確率\r\nデフォルト:0.0 最小値:0.0 最大値:1.0"}
         };
 
-        public static readonly Operation[] operationList =
+        public static readonly Operation[] OperationList =
         {
             new Operation {name = "0", description = "元の値に加算"},
             new Operation {name = "1", description = "元の値に値×100%を加算"},
             new Operation {name = "2", description = "元の値に値×100%を乗算"}
+        };
+
+        public static readonly Slot[] SlotList =
+        {
+            new Slot {name = "None", description = ""},
+            new Slot {name = "mainhand", description = ""},
+            new Slot {name = "offhand", description = ""},
+            new Slot {name = "feet", description = ""},
+            new Slot {name = "legs", description = ""},
+            new Slot {name = "chest", description = ""},
+            new Slot {name = "head", description = ""},
         };
 
 
@@ -62,10 +69,9 @@ namespace CommandEditor.AddAbility
         private int abilityTypeIndex = 0;
         private float abilityValue = 0.0f;
         private int operationIndex = 0;
-        // 要素=チェックON
-        private List<Slot> slotList = new List<Slot>();
-        private string UUIDMost = "";
-        private string UUIDLeast = "";
+        private int slotIndex = 0;
+        private string UUIDMost = "1";
+        private string UUIDLeast = "1";
 
         public string GetAbilityName()
         {
@@ -83,9 +89,9 @@ namespace CommandEditor.AddAbility
         {
             return operationIndex;
         }
-        public List<Slot> GetSlot()
+        public int GetSlotIndex()
         {
-            return slotList;
+            return slotIndex;
         }
         public string GetUUIDMost()
         {
@@ -112,9 +118,9 @@ namespace CommandEditor.AddAbility
         {
             operationIndex = index;
         }
-        public void SetSlotList(List<Slot> list)
+        public void SetSlotIndex(int index)
         {
-            slotList = list;
+            slotIndex = index;
         }
         public void SetUUIDMost(string str)
         {
@@ -123,11 +129,6 @@ namespace CommandEditor.AddAbility
         public void SetUUIDLeast(string str)
         {
             UUIDLeast = str;
-        }
-        public void AddSlotList(string str)
-        {
-            Slot slot = (Slot)Enum.Parse(typeof(Slot), str);
-            slotList.Add(slot);
         }
 
         public override string ToString()
