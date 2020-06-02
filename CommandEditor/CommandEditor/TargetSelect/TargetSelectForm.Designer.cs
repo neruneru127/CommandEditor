@@ -30,8 +30,9 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.TargetSelectCombBox = new System.Windows.Forms.ComboBox();
+            this.targetSelectCombBox = new System.Windows.Forms.ComboBox();
             this.NBTSettingButton = new System.Windows.Forms.Button();
+            this.targetNBTTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -47,44 +48,54 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.Font = new System.Drawing.Font("MS UI Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label2.Location = new System.Drawing.Point(-3, 30);
+            this.label2.Location = new System.Drawing.Point(-3, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 21);
             this.label2.TabIndex = 1;
             this.label2.Text = "ターゲットNBT";
             // 
-            // TargetSelectCombBox
+            // targetSelectCombBox
             // 
-            this.TargetSelectCombBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.TargetSelectCombBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.TargetSelectCombBox.FormattingEnabled = true;
-            this.TargetSelectCombBox.Location = new System.Drawing.Point(139, 3);
-            this.TargetSelectCombBox.Name = "TargetSelectCombBox";
-            this.TargetSelectCombBox.Size = new System.Drawing.Size(93, 20);
-            this.TargetSelectCombBox.TabIndex = 2;
+            this.targetSelectCombBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.targetSelectCombBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.targetSelectCombBox.FormattingEnabled = true;
+            this.targetSelectCombBox.Location = new System.Drawing.Point(139, 3);
+            this.targetSelectCombBox.Name = "targetSelectCombBox";
+            this.targetSelectCombBox.Size = new System.Drawing.Size(93, 20);
+            this.targetSelectCombBox.TabIndex = 2;
             // 
             // NBTSettingButton
             // 
             this.NBTSettingButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.NBTSettingButton.Location = new System.Drawing.Point(139, 26);
+            this.NBTSettingButton.Location = new System.Drawing.Point(210, 48);
             this.NBTSettingButton.Name = "NBTSettingButton";
-            this.NBTSettingButton.Size = new System.Drawing.Size(93, 23);
+            this.NBTSettingButton.Size = new System.Drawing.Size(22, 19);
             this.NBTSettingButton.TabIndex = 3;
-            this.NBTSettingButton.Text = "NBT指定";
+            this.NBTSettingButton.Text = "...";
             this.NBTSettingButton.UseVisualStyleBackColor = true;
             this.NBTSettingButton.Click += new System.EventHandler(this.NBTSettingButton_Click);
+            // 
+            // targetNBTTextBox
+            // 
+            this.targetNBTTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.targetNBTTextBox.Location = new System.Drawing.Point(0, 48);
+            this.targetNBTTextBox.Name = "targetNBTTextBox";
+            this.targetNBTTextBox.Size = new System.Drawing.Size(204, 19);
+            this.targetNBTTextBox.TabIndex = 4;
             // 
             // TargetSelectForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.targetNBTTextBox);
             this.Controls.Add(this.NBTSettingButton);
-            this.Controls.Add(this.TargetSelectCombBox);
+            this.Controls.Add(this.targetSelectCombBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "TargetSelectForm";
-            this.Size = new System.Drawing.Size(232, 51);
+            this.Size = new System.Drawing.Size(232, 70);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -92,7 +103,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox TargetSelectCombBox;
+        private System.Windows.Forms.ComboBox targetSelectCombBox;
         private System.Windows.Forms.Button NBTSettingButton;
+        private System.Windows.Forms.TextBox targetNBTTextBox;
     }
 }

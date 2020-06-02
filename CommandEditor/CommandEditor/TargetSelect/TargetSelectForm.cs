@@ -7,27 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CommandEditor.TargetSelect;
 
 namespace CommandEditor
 {
     public partial class TargetSelectForm : UserControl
     {
-        public struct TargetSelect
-        {
-            public string name;
-            public string description;
-        }
-
-        public static readonly TargetSelect[] TargetSelectList =
-        {
-            new TargetSelect {name = "@a", description = "すべてのプレイヤー"},
-            new TargetSelect {name = "@e", description = "すべてのエンティティ"},
-            new TargetSelect {name = "@p", description = "最も近いプレイヤー"},
-            new TargetSelect {name = "@r", description = "ランダムなプレイヤー"},
-            new TargetSelect {name = "@s", description = "実行したエンティティ"}
-        };
-
-
         public TargetSelectForm()
         {
             InitializeComponent();
@@ -40,11 +25,11 @@ namespace CommandEditor
         /// </summary>
         private void Init()
         {
-            foreach(var item in TargetSelectList)
+            foreach(var item in TargetSelectData.TargetSelectList)
             {
-                TargetSelectCombBox.Items.Add(item.name);
+                targetSelectCombBox.Items.Add(item.name);
             }
-            TargetSelectCombBox.SelectedIndex = 0;
+            targetSelectCombBox.SelectedIndex = 0;
         }
 
         private void NBTSettingButton_Click(object sender, EventArgs e)
@@ -58,7 +43,7 @@ namespace CommandEditor
         /// <returns>ターゲットセレクタの文字列</returns>
         public string GetSelecter()
         {
-            return TargetSelectList[TargetSelectCombBox.SelectedIndex].name;
+            return TargetSelectData.TargetSelectList[targetSelectCombBox.SelectedIndex].name;
         }
     }
 }

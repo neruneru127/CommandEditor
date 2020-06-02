@@ -47,6 +47,9 @@ namespace CommandEditor
         public static readonly string ITEM_HEADER = "display";
         public static readonly string ITEM_NAME = "Name";
         public static readonly string ITEM_DESCRIPTION = "Lore";
+        public static readonly string ITEM_HIDE_FLAG = "HideFlags";
+
+        public static readonly string REPAIR_HEADER = "RepairCost";
 
         // その他----------------------
         public static readonly string COLON = ":";

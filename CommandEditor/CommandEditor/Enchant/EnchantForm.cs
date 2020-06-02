@@ -40,38 +40,43 @@ namespace CommandEditor.Enchant
 
             if(enchantSettingForm.ShowDialog() == DialogResult.OK)
             {
-                EnchantListBox.Items.Add(enchantData);
+                enchantListBox.Items.Add(enchantData);
             }
         }
 
         private void DataChange()
         {
-            var selectedItem = (EnchantData)EnchantListBox.SelectedItem;
-            int selectIndex = EnchantListBox.SelectedIndex;
+            var selectedItem = (EnchantData)enchantListBox.SelectedItem;
+            int selectIndex = enchantListBox.SelectedIndex;
             EnchantSettingForm enchantSettingForm = new EnchantSettingForm(selectedItem);
 
             if (enchantSettingForm.ShowDialog() == DialogResult.OK)
             {
-                EnchantListBox.Items.RemoveAt(selectIndex);
-                EnchantListBox.Items.Add(selectedItem);
+                enchantListBox.Items.RemoveAt(selectIndex);
+                enchantListBox.Items.Add(selectedItem);
             }
         }
 
         private void DataDelete()
         {
-            var selectedItem = EnchantListBox.SelectedItem;
-            EnchantListBox.Items.Remove(selectedItem);
+            var selectedItem = enchantListBox.SelectedItem;
+            enchantListBox.Items.Remove(selectedItem);
         }
 
         public List<EnchantData> GetEnchantDataList()
         {
             List<EnchantData> enchantDataList = new List<EnchantData>();
-            foreach(var item in EnchantListBox.Items)
+            foreach(var item in enchantListBox.Items)
             {
                 enchantDataList.Add((EnchantData)item);
             }
 
             return enchantDataList;
+        }
+
+        private void EnchantForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

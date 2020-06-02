@@ -24,7 +24,7 @@ namespace CommandEditor.Enchant
 
         private void Init()
         {
-            foreach(var item in EnchantData.EnchantTypeList)
+            foreach(var item in EnchantData.EnchantBaseList)
             {
                 EnchantComboBox.Items.Add(item.description);
             }

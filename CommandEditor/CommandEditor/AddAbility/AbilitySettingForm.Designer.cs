@@ -35,18 +35,18 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.AbilityNameTextBox = new System.Windows.Forms.TextBox();
-            this.OperationComboBox = new System.Windows.Forms.ComboBox();
-            this.AbilityTypeComboBox = new System.Windows.Forms.ComboBox();
-            this.ValueNumeric = new System.Windows.Forms.NumericUpDown();
-            this.OKButton = new System.Windows.Forms.Button();
-            this.CancelButton = new System.Windows.Forms.Button();
-            this.SlotCombBox = new System.Windows.Forms.ComboBox();
-            this.UUIDMostNumeric = new System.Windows.Forms.NumericUpDown();
-            this.UUIDLeastNumeric = new System.Windows.Forms.NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)(this.ValueNumeric)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UUIDMostNumeric)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UUIDLeastNumeric)).BeginInit();
+            this.abilityNameTextBox = new System.Windows.Forms.TextBox();
+            this.operationComboBox = new System.Windows.Forms.ComboBox();
+            this.abilityTypeComboBox = new System.Windows.Forms.ComboBox();
+            this.valueNumeric = new System.Windows.Forms.NumericUpDown();
+            this.okButton = new System.Windows.Forms.Button();
+            this.cancelButton = new System.Windows.Forms.Button();
+            this.slotCombBox = new System.Windows.Forms.ComboBox();
+            this.uuidMostNumeric = new System.Windows.Forms.NumericUpDown();
+            this.uuidLeastNumeric = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.valueNumeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uuidMostNumeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uuidLeastNumeric)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -112,118 +112,118 @@
             this.label7.TabIndex = 7;
             this.label7.Text = "演算方法";
             // 
-            // AbilityNameTextBox
+            // abilityNameTextBox
             // 
-            this.AbilityNameTextBox.Location = new System.Drawing.Point(129, 7);
-            this.AbilityNameTextBox.Name = "AbilityNameTextBox";
-            this.AbilityNameTextBox.Size = new System.Drawing.Size(161, 19);
-            this.AbilityNameTextBox.TabIndex = 8;
+            this.abilityNameTextBox.Location = new System.Drawing.Point(129, 7);
+            this.abilityNameTextBox.Name = "abilityNameTextBox";
+            this.abilityNameTextBox.Size = new System.Drawing.Size(161, 19);
+            this.abilityNameTextBox.TabIndex = 8;
             // 
-            // OperationComboBox
+            // operationComboBox
             // 
-            this.OperationComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.OperationComboBox.FormattingEnabled = true;
-            this.OperationComboBox.Location = new System.Drawing.Point(129, 83);
-            this.OperationComboBox.Name = "OperationComboBox";
-            this.OperationComboBox.Size = new System.Drawing.Size(161, 20);
-            this.OperationComboBox.TabIndex = 11;
+            this.operationComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.operationComboBox.FormattingEnabled = true;
+            this.operationComboBox.Location = new System.Drawing.Point(129, 83);
+            this.operationComboBox.Name = "operationComboBox";
+            this.operationComboBox.Size = new System.Drawing.Size(161, 20);
+            this.operationComboBox.TabIndex = 11;
             // 
-            // AbilityTypeComboBox
+            // abilityTypeComboBox
             // 
-            this.AbilityTypeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.AbilityTypeComboBox.FormattingEnabled = true;
-            this.AbilityTypeComboBox.Location = new System.Drawing.Point(129, 32);
-            this.AbilityTypeComboBox.Name = "AbilityTypeComboBox";
-            this.AbilityTypeComboBox.Size = new System.Drawing.Size(161, 20);
-            this.AbilityTypeComboBox.TabIndex = 12;
+            this.abilityTypeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.abilityTypeComboBox.FormattingEnabled = true;
+            this.abilityTypeComboBox.Location = new System.Drawing.Point(129, 32);
+            this.abilityTypeComboBox.Name = "abilityTypeComboBox";
+            this.abilityTypeComboBox.Size = new System.Drawing.Size(161, 20);
+            this.abilityTypeComboBox.TabIndex = 12;
             // 
-            // ValueNumeric
+            // valueNumeric
             // 
-            this.ValueNumeric.DecimalPlaces = 1;
-            this.ValueNumeric.Location = new System.Drawing.Point(129, 58);
-            this.ValueNumeric.Maximum = new decimal(new int[] {
+            this.valueNumeric.DecimalPlaces = 1;
+            this.valueNumeric.Location = new System.Drawing.Point(129, 58);
+            this.valueNumeric.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
-            this.ValueNumeric.Minimum = new decimal(new int[] {
+            this.valueNumeric.Minimum = new decimal(new int[] {
             1024,
             0,
             0,
             -2147483648});
-            this.ValueNumeric.Name = "ValueNumeric";
-            this.ValueNumeric.Size = new System.Drawing.Size(161, 19);
-            this.ValueNumeric.TabIndex = 13;
+            this.valueNumeric.Name = "valueNumeric";
+            this.valueNumeric.Size = new System.Drawing.Size(161, 19);
+            this.valueNumeric.TabIndex = 13;
             // 
-            // OKButton
+            // okButton
             // 
-            this.OKButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.OKButton.Location = new System.Drawing.Point(134, 185);
-            this.OKButton.Name = "OKButton";
-            this.OKButton.Size = new System.Drawing.Size(75, 23);
-            this.OKButton.TabIndex = 15;
-            this.OKButton.Text = "OK";
-            this.OKButton.UseVisualStyleBackColor = true;
-            this.OKButton.Click += new System.EventHandler(this.OKButton_Click);
+            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.okButton.Location = new System.Drawing.Point(134, 185);
+            this.okButton.Name = "okButton";
+            this.okButton.Size = new System.Drawing.Size(75, 23);
+            this.okButton.TabIndex = 15;
+            this.okButton.Text = "OK";
+            this.okButton.UseVisualStyleBackColor = true;
+            this.okButton.Click += new System.EventHandler(this.OKButton_Click);
             // 
-            // CancelButton
+            // cancelButton
             // 
-            this.CancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.CancelButton.Location = new System.Drawing.Point(215, 185);
-            this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(75, 23);
-            this.CancelButton.TabIndex = 16;
-            this.CancelButton.Text = "Cancel";
-            this.CancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.cancelButton.Location = new System.Drawing.Point(215, 185);
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(75, 23);
+            this.cancelButton.TabIndex = 16;
+            this.cancelButton.Text = "Cancel";
+            this.cancelButton.UseVisualStyleBackColor = true;
             // 
-            // SlotCombBox
+            // slotCombBox
             // 
-            this.SlotCombBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.SlotCombBox.FormattingEnabled = true;
-            this.SlotCombBox.Location = new System.Drawing.Point(129, 109);
-            this.SlotCombBox.Name = "SlotCombBox";
-            this.SlotCombBox.Size = new System.Drawing.Size(161, 20);
-            this.SlotCombBox.TabIndex = 17;
+            this.slotCombBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.slotCombBox.FormattingEnabled = true;
+            this.slotCombBox.Location = new System.Drawing.Point(129, 109);
+            this.slotCombBox.Name = "slotCombBox";
+            this.slotCombBox.Size = new System.Drawing.Size(161, 20);
+            this.slotCombBox.TabIndex = 17;
             // 
-            // UUIDMostNumeric
+            // uuidMostNumeric
             // 
-            this.UUIDMostNumeric.Location = new System.Drawing.Point(129, 135);
-            this.UUIDMostNumeric.Maximum = new decimal(new int[] {
+            this.uuidMostNumeric.Location = new System.Drawing.Point(129, 135);
+            this.uuidMostNumeric.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
-            this.UUIDMostNumeric.Minimum = new decimal(new int[] {
+            this.uuidMostNumeric.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.UUIDMostNumeric.Name = "UUIDMostNumeric";
-            this.UUIDMostNumeric.Size = new System.Drawing.Size(161, 19);
-            this.UUIDMostNumeric.TabIndex = 18;
-            this.UUIDMostNumeric.Value = new decimal(new int[] {
+            this.uuidMostNumeric.Name = "uuidMostNumeric";
+            this.uuidMostNumeric.Size = new System.Drawing.Size(161, 19);
+            this.uuidMostNumeric.TabIndex = 18;
+            this.uuidMostNumeric.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
             // 
-            // UUIDLeastNumeric
+            // uuidLeastNumeric
             // 
-            this.UUIDLeastNumeric.Location = new System.Drawing.Point(129, 160);
-            this.UUIDLeastNumeric.Maximum = new decimal(new int[] {
+            this.uuidLeastNumeric.Location = new System.Drawing.Point(129, 160);
+            this.uuidLeastNumeric.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
-            this.UUIDLeastNumeric.Minimum = new decimal(new int[] {
+            this.uuidLeastNumeric.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.UUIDLeastNumeric.Name = "UUIDLeastNumeric";
-            this.UUIDLeastNumeric.Size = new System.Drawing.Size(161, 19);
-            this.UUIDLeastNumeric.TabIndex = 19;
-            this.UUIDLeastNumeric.Value = new decimal(new int[] {
+            this.uuidLeastNumeric.Name = "uuidLeastNumeric";
+            this.uuidLeastNumeric.Size = new System.Drawing.Size(161, 19);
+            this.uuidLeastNumeric.TabIndex = 19;
+            this.uuidLeastNumeric.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -234,15 +234,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(300, 214);
-            this.Controls.Add(this.UUIDLeastNumeric);
-            this.Controls.Add(this.UUIDMostNumeric);
-            this.Controls.Add(this.SlotCombBox);
-            this.Controls.Add(this.CancelButton);
-            this.Controls.Add(this.OKButton);
-            this.Controls.Add(this.ValueNumeric);
-            this.Controls.Add(this.AbilityTypeComboBox);
-            this.Controls.Add(this.OperationComboBox);
-            this.Controls.Add(this.AbilityNameTextBox);
+            this.Controls.Add(this.uuidLeastNumeric);
+            this.Controls.Add(this.uuidMostNumeric);
+            this.Controls.Add(this.slotCombBox);
+            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.okButton);
+            this.Controls.Add(this.valueNumeric);
+            this.Controls.Add(this.abilityTypeComboBox);
+            this.Controls.Add(this.operationComboBox);
+            this.Controls.Add(this.abilityNameTextBox);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -253,9 +253,9 @@
             this.Name = "AbilitySettingForm";
             this.Text = "AbilitySettingWindow";
             this.TopMost = true;
-            ((System.ComponentModel.ISupportInitialize)(this.ValueNumeric)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UUIDMostNumeric)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UUIDLeastNumeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.valueNumeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uuidMostNumeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uuidLeastNumeric)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -270,14 +270,14 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox AbilityNameTextBox;
-        private System.Windows.Forms.ComboBox OperationComboBox;
-        private System.Windows.Forms.ComboBox AbilityTypeComboBox;
-        private System.Windows.Forms.NumericUpDown ValueNumeric;
-        private System.Windows.Forms.Button OKButton;
-        private System.Windows.Forms.Button CancelButton;
-        private System.Windows.Forms.ComboBox SlotCombBox;
-        private System.Windows.Forms.NumericUpDown UUIDMostNumeric;
-        private System.Windows.Forms.NumericUpDown UUIDLeastNumeric;
+        private System.Windows.Forms.TextBox abilityNameTextBox;
+        private System.Windows.Forms.ComboBox operationComboBox;
+        private System.Windows.Forms.ComboBox abilityTypeComboBox;
+        private System.Windows.Forms.NumericUpDown valueNumeric;
+        private System.Windows.Forms.Button okButton;
+        private System.Windows.Forms.Button cancelButton;
+        private System.Windows.Forms.ComboBox slotCombBox;
+        private System.Windows.Forms.NumericUpDown uuidMostNumeric;
+        private System.Windows.Forms.NumericUpDown uuidLeastNumeric;
     }
 }

@@ -39,10 +39,10 @@
             this.mainCommand = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.CommandPanel = new System.Windows.Forms.Panel();
+            this.generateTextBox = new System.Windows.Forms.TextBox();
+            this.generateButton = new System.Windows.Forms.Button();
+            this.clearButton = new System.Windows.Forms.Button();
             this.giveForm1 = new CommandEditor.GiveForm();
-            this.GenerateTextBox = new System.Windows.Forms.TextBox();
-            this.GenerateButton = new System.Windows.Forms.Button();
-            this.ClearButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.CommandPanel.SuspendLayout();
             this.SuspendLayout();
@@ -126,6 +126,9 @@
             // 
             // CommandPanel
             // 
+            this.CommandPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.CommandPanel.AutoScroll = true;
             this.CommandPanel.Controls.Add(this.giveForm1);
             this.CommandPanel.Location = new System.Drawing.Point(1, 55);
@@ -133,48 +136,52 @@
             this.CommandPanel.Size = new System.Drawing.Size(759, 340);
             this.CommandPanel.TabIndex = 3;
             // 
+            // generateTextBox
+            // 
+            this.generateTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.generateTextBox.Location = new System.Drawing.Point(0, 394);
+            this.generateTextBox.Multiline = true;
+            this.generateTextBox.Name = "generateTextBox";
+            this.generateTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.generateTextBox.Size = new System.Drawing.Size(586, 44);
+            this.generateTextBox.TabIndex = 4;
+            // 
+            // generateButton
+            // 
+            this.generateButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.generateButton.Location = new System.Drawing.Point(592, 415);
+            this.generateButton.Name = "generateButton";
+            this.generateButton.Size = new System.Drawing.Size(75, 23);
+            this.generateButton.TabIndex = 5;
+            this.generateButton.Text = "Generate";
+            this.generateButton.UseVisualStyleBackColor = true;
+            this.generateButton.Click += new System.EventHandler(this.GenerateButton_Click);
+            // 
+            // clearButton
+            // 
+            this.clearButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.clearButton.Location = new System.Drawing.Point(673, 415);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(75, 23);
+            this.clearButton.TabIndex = 6;
+            this.clearButton.Text = "Clear";
+            this.clearButton.UseVisualStyleBackColor = true;
+            // 
             // giveForm1
             // 
+            this.giveForm1.AutoSize = true;
             this.giveForm1.Location = new System.Drawing.Point(-1, 0);
             this.giveForm1.Name = "giveForm1";
-            this.giveForm1.Size = new System.Drawing.Size(760, 340);
+            this.giveForm1.Size = new System.Drawing.Size(760, 372);
             this.giveForm1.TabIndex = 0;
-            // 
-            // GenerateTextBox
-            // 
-            this.GenerateTextBox.Location = new System.Drawing.Point(0, 394);
-            this.GenerateTextBox.Multiline = true;
-            this.GenerateTextBox.Name = "GenerateTextBox";
-            this.GenerateTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.GenerateTextBox.Size = new System.Drawing.Size(586, 44);
-            this.GenerateTextBox.TabIndex = 4;
-            // 
-            // GenerateButton
-            // 
-            this.GenerateButton.Location = new System.Drawing.Point(592, 415);
-            this.GenerateButton.Name = "GenerateButton";
-            this.GenerateButton.Size = new System.Drawing.Size(75, 23);
-            this.GenerateButton.TabIndex = 5;
-            this.GenerateButton.Text = "Generate";
-            this.GenerateButton.UseVisualStyleBackColor = true;
-            this.GenerateButton.Click += new System.EventHandler(this.GenerateButton_Click);
-            // 
-            // ClearButton
-            // 
-            this.ClearButton.Location = new System.Drawing.Point(673, 415);
-            this.ClearButton.Name = "ClearButton";
-            this.ClearButton.Size = new System.Drawing.Size(75, 23);
-            this.ClearButton.TabIndex = 6;
-            this.ClearButton.Text = "Clear";
-            this.ClearButton.UseVisualStyleBackColor = true;
             // 
             // MainWindow
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(760, 450);
-            this.Controls.Add(this.ClearButton);
-            this.Controls.Add(this.GenerateButton);
-            this.Controls.Add(this.GenerateTextBox);
+            this.Controls.Add(this.clearButton);
+            this.Controls.Add(this.generateButton);
+            this.Controls.Add(this.generateTextBox);
             this.Controls.Add(this.CommandPanel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.mainCommand);
@@ -185,6 +192,7 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.CommandPanel.ResumeLayout(false);
+            this.CommandPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -204,9 +212,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel CommandPanel;
         private GiveForm giveForm1;
-        private System.Windows.Forms.TextBox GenerateTextBox;
-        private System.Windows.Forms.Button GenerateButton;
-        private System.Windows.Forms.Button ClearButton;
+        private System.Windows.Forms.TextBox generateTextBox;
+        private System.Windows.Forms.Button generateButton;
+        private System.Windows.Forms.Button clearButton;
     }
 }
 

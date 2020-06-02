@@ -81,7 +81,7 @@ namespace CommandEditor
 
         public void ChangeCommandWindow(string commandStr)
         {
-            GenerateTextBox.Text = commandStr;
+            generateTextBox.Text = commandStr;
         }
 
         private void GenerateButton_Click(object sender, EventArgs e)

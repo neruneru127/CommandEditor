@@ -25,28 +25,28 @@ namespace CommandEditor.AddAbility
         private void Init()
         {
             // 能力一覧を設定
-            foreach (var item in AbilityData.AbilityTypeList)
+            foreach (var item in AbilityData.AbilityBaseList)
             {
-                AbilityTypeComboBox.Items.Add(item.name);
+                abilityTypeComboBox.Items.Add(item.name);
             }
             // 計算方法を設定
             foreach(var item in AbilityData.OperationList)
             {
-                OperationComboBox.Items.Add(item.description);
+                operationComboBox.Items.Add(item.description);
             }
             // 装備箇所を設定
             foreach(var item in AbilityData.SlotList)
             {
-                SlotCombBox.Items.Add(item.name);
+                slotCombBox.Items.Add(item.name);
             }
 
-            AbilityNameTextBox.Text = abilityData.GetAbilityName();
-            AbilityTypeComboBox.SelectedIndex = abilityData.GetAbilityTypeIndex();
-            ValueNumeric.Value = new decimal(abilityData.GetValue());
-            OperationComboBox.SelectedIndex = abilityData.GetOperationIndex();
-            SlotCombBox.SelectedIndex = abilityData.GetSlotIndex();
-            UUIDMostNumeric.Value = int.Parse(abilityData.GetUUIDMost());   
-            UUIDLeastNumeric.Value = int.Parse(abilityData.GetUUIDLeast());
+            abilityNameTextBox.Text = abilityData.GetAbilityName();
+            abilityTypeComboBox.SelectedIndex = abilityData.GetAbilityTypeIndex();
+            valueNumeric.Value = new decimal(abilityData.GetValue());
+            operationComboBox.SelectedIndex = abilityData.GetOperationIndex();
+            slotCombBox.SelectedIndex = abilityData.GetSlotIndex();
+            uuidMostNumeric.Value = int.Parse(abilityData.GetUUIDMost());   
+            uuidLeastNumeric.Value = int.Parse(abilityData.GetUUIDLeast());
 
         }
 
@@ -54,13 +54,13 @@ namespace CommandEditor.AddAbility
         private void OKButton_Click(object sender, EventArgs e)
         {
             // データをセット
-            abilityData.SetAbilityName(AbilityNameTextBox.Text);
-            abilityData.SetAbilityTypeIndex(AbilityTypeComboBox.SelectedIndex);
-            abilityData.SetValue((float)ValueNumeric.Value);
-            abilityData.SetOperationIndex(OperationComboBox.SelectedIndex);
-            abilityData.SetSlotIndex(SlotCombBox.SelectedIndex);
-            abilityData.SetUUIDMost(UUIDMostNumeric.Value.ToString());
-            abilityData.SetUUIDLeast(UUIDLeastNumeric.Value.ToString());
+            abilityData.SetAbilityName(abilityNameTextBox.Text);
+            abilityData.SetAbilityTypeIndex(abilityTypeComboBox.SelectedIndex);
+            abilityData.SetValue((float)valueNumeric.Value);
+            abilityData.SetOperationIndex(operationComboBox.SelectedIndex);
+            abilityData.SetSlotIndex(slotCombBox.SelectedIndex);
+            abilityData.SetUUIDMost(uuidMostNumeric.Value.ToString());
+            abilityData.SetUUIDLeast(uuidLeastNumeric.Value.ToString());
         }
     }
 }

@@ -40,33 +40,33 @@ namespace CommandEditor
             AbilitySettingForm settingForm = new AbilitySettingForm(abilityData);
             if (settingForm.ShowDialog(this) == DialogResult.OK)
             {
-                AddAbilityListBox.Items.Add(abilityData);
+                addAbilityListBox.Items.Add(abilityData);
             }
              
         }
 
         private void DataDelete()
         {
-            var selectedItem = AddAbilityListBox.SelectedItem;
-            AddAbilityListBox.Items.Remove(selectedItem);
+            var selectedItem = addAbilityListBox.SelectedItem;
+            addAbilityListBox.Items.Remove(selectedItem);
         }
 
         private void DataChange()
         {
-            var selectedItem = (AbilityData)AddAbilityListBox.SelectedItem;
-            int selectIndex = AddAbilityListBox.SelectedIndex;
+            var selectedItem = (AbilityData)addAbilityListBox.SelectedItem;
+            int selectIndex = addAbilityListBox.SelectedIndex;
             AbilitySettingForm settingForm = new AbilitySettingForm(selectedItem);
             if (settingForm.ShowDialog(this) == DialogResult.OK)
             {
-                AddAbilityListBox.Items.RemoveAt(selectIndex);
-                AddAbilityListBox.Items.Add(selectedItem);
+                addAbilityListBox.Items.RemoveAt(selectIndex);
+                addAbilityListBox.Items.Add(selectedItem);
             }
         }
 
         public List<AbilityData> GetAbilityDataList()
         {
             List<AbilityData> abilityDataList = new List<AbilityData>();
-            foreach(var item in AddAbilityListBox.Items)
+            foreach(var item in addAbilityListBox.Items)
             {
                 abilityDataList.Add((AbilityData)item);
             }

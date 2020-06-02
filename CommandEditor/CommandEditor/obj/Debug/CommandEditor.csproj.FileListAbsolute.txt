@@ -13,4 +13,8 @@ C:\VS\CommandEditor\CommandEditor\CommandEditor\obj\Debug\CommandEditor.AddAbili
 C:\VS\CommandEditor\CommandEditor\CommandEditor\obj\Debug\CommandEditor.MainWindow.resources
 C:\VS\CommandEditor\CommandEditor\CommandEditor\obj\Debug\CommandEditor.Enchant.EnchantForm.resources
 C:\VS\CommandEditor\CommandEditor\CommandEditor\obj\Debug\CommandEditor.Enchant.EnchantSettingForm.resources
+C:\VS\CommandEditor\CommandEditor\CommandEditor\obj\Debug\CommandEditor.TargetSelect.TargetSelectSettingForm.resources
+C:\VS\CommandEditor\CommandEditor\CommandEditor\obj\Debug\CommandEditor.Item.ItemNBTSettingForm.resources
+C:\VS\CommandEditor\CommandEditor\CommandEditor\obj\Debug\CommandEditor.Item.ToolForm.resources
+C:\VS\CommandEditor\CommandEditor\CommandEditor\obj\Debug\CommandEditor.Item.NBTUserForm.BlockForm.resources
 C:\VS\CommandEditor\CommandEditor\CommandEditor\obj\Debug\CommandEditor.csprojAssemblyReference.cache

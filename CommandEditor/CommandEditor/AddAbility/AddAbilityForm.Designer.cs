@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.label6 = new System.Windows.Forms.Label();
-            this.AddAbilityListBox = new System.Windows.Forms.ListBox();
-            this.DeleteButton = new System.Windows.Forms.Button();
-            this.AddButton = new System.Windows.Forms.Button();
-            this.ChangeButton = new System.Windows.Forms.Button();
+            this.addAbilityListBox = new System.Windows.Forms.ListBox();
+            this.deleteButton = new System.Windows.Forms.Button();
+            this.addButton = new System.Windows.Forms.Button();
+            this.changeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label6
@@ -44,59 +44,59 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "追加効果";
             // 
-            // AddAbilityListBox
+            // addAbilityListBox
             // 
-            this.AddAbilityListBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.addAbilityListBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddAbilityListBox.FormattingEnabled = true;
-            this.AddAbilityListBox.ItemHeight = 12;
-            this.AddAbilityListBox.Location = new System.Drawing.Point(80, 0);
-            this.AddAbilityListBox.Name = "AddAbilityListBox";
-            this.AddAbilityListBox.ScrollAlwaysVisible = true;
-            this.AddAbilityListBox.Size = new System.Drawing.Size(370, 76);
-            this.AddAbilityListBox.TabIndex = 13;
+            this.addAbilityListBox.FormattingEnabled = true;
+            this.addAbilityListBox.ItemHeight = 12;
+            this.addAbilityListBox.Location = new System.Drawing.Point(80, 0);
+            this.addAbilityListBox.Name = "addAbilityListBox";
+            this.addAbilityListBox.ScrollAlwaysVisible = true;
+            this.addAbilityListBox.Size = new System.Drawing.Size(370, 76);
+            this.addAbilityListBox.TabIndex = 13;
             // 
-            // DeleteButton
+            // deleteButton
             // 
-            this.DeleteButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.DeleteButton.Location = new System.Drawing.Point(372, 81);
-            this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(75, 23);
-            this.DeleteButton.TabIndex = 14;
-            this.DeleteButton.Text = "削除";
-            this.DeleteButton.UseVisualStyleBackColor = true;
-            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
+            this.deleteButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.deleteButton.Location = new System.Drawing.Point(372, 81);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(75, 23);
+            this.deleteButton.TabIndex = 14;
+            this.deleteButton.Text = "削除";
+            this.deleteButton.UseVisualStyleBackColor = true;
+            this.deleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
-            // AddButton
+            // addButton
             // 
-            this.AddButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddButton.Location = new System.Drawing.Point(210, 81);
-            this.AddButton.Name = "AddButton";
-            this.AddButton.Size = new System.Drawing.Size(75, 23);
-            this.AddButton.TabIndex = 15;
-            this.AddButton.Text = "追加";
-            this.AddButton.UseVisualStyleBackColor = true;
-            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
+            this.addButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.addButton.Location = new System.Drawing.Point(210, 81);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(75, 23);
+            this.addButton.TabIndex = 15;
+            this.addButton.Text = "追加";
+            this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
-            // ChangeButton
+            // changeButton
             // 
-            this.ChangeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.ChangeButton.Location = new System.Drawing.Point(291, 81);
-            this.ChangeButton.Name = "ChangeButton";
-            this.ChangeButton.Size = new System.Drawing.Size(75, 23);
-            this.ChangeButton.TabIndex = 16;
-            this.ChangeButton.Text = "変更";
-            this.ChangeButton.UseVisualStyleBackColor = true;
-            this.ChangeButton.Click += new System.EventHandler(this.ChangeButton_Click);
+            this.changeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.changeButton.Location = new System.Drawing.Point(291, 81);
+            this.changeButton.Name = "changeButton";
+            this.changeButton.Size = new System.Drawing.Size(75, 23);
+            this.changeButton.TabIndex = 16;
+            this.changeButton.Text = "変更";
+            this.changeButton.UseVisualStyleBackColor = true;
+            this.changeButton.Click += new System.EventHandler(this.ChangeButton_Click);
             // 
             // AddAbilityForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.ChangeButton);
-            this.Controls.Add(this.AddButton);
-            this.Controls.Add(this.DeleteButton);
-            this.Controls.Add(this.AddAbilityListBox);
+            this.Controls.Add(this.changeButton);
+            this.Controls.Add(this.addButton);
+            this.Controls.Add(this.deleteButton);
+            this.Controls.Add(this.addAbilityListBox);
             this.Controls.Add(this.label6);
             this.Name = "AddAbilityForm";
             this.Size = new System.Drawing.Size(450, 107);
@@ -107,9 +107,9 @@
         #endregion
 
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ListBox AddAbilityListBox;
-        private System.Windows.Forms.Button DeleteButton;
-        private System.Windows.Forms.Button AddButton;
-        private System.Windows.Forms.Button ChangeButton;
+        private System.Windows.Forms.ListBox addAbilityListBox;
+        private System.Windows.Forms.Button deleteButton;
+        private System.Windows.Forms.Button addButton;
+        private System.Windows.Forms.Button changeButton;
     }
 }
